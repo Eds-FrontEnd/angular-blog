@@ -1,0 +1,21 @@
+.container__info-card {
+    z-index: 10;
+
+    h1 {
+      text-align: center;
+      margin-top: 25px;
+      padding: 0px 25px;
+    }
+
+    .info-card__description {
+      text-align: justify;
+      padding: 25px;
+      text-indent: 4em;
+      line-height: 32px;
+
+      @media screen and (width: 475px){
+        line-height: 25px;
+
+      }
+    }
+}

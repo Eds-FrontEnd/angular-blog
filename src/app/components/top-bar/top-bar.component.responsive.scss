@@ -1,0 +1,44 @@
+@media screen and (max-width: 450px) {
+  .container__top-bar {
+    @media screen and (max-width: 320px) {
+      min-width: 320px;
+
+      .top-bar__nav{
+        min-width: 320px;
+      }
+    }
+
+    .icon {
+      display: flex;
+    }
+
+    .top-bar__nav {
+
+      .close {
+        display: block;
+      }
+
+      ul {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--black);
+        position: absolute;
+        padding: 10px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        font-size: 35px;
+        z-index: 999;
+
+        li {
+          padding: 10px 0px;
+
+          a {
+            font-size: 34px;
+          }
+        }
+      }
+    }
+  }
+}

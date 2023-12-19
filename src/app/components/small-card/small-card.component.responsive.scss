@@ -1,0 +1,7 @@
+.container__small-card{
+  img{
+    @media screen and (max-width: 485px){
+      width: 50%;
+    }
+  }
+}

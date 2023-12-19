@@ -1,0 +1,30 @@
+:root{
+  // Cores
+  --black: #111;
+  --white: #fff;
+  --red: #ff0000;
+  --pink: rgb(255, 0, 191);
+  --green: rgb(127, 255, 0);
+  --transparent: transparent;
+  // Fonte
+  --fonteSegoe: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: var(--fonteSegoe);
+}
+
+body{
+  width: 100%;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+app-small-card {
+  cursor: pointer;
+}

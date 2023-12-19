@@ -1,0 +1,33 @@
+.container__big-card{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  overflow-x: hidden;
+
+  .big-card__fullbanner {
+    position: relative;
+  }
+
+  .button-description{
+    text-align: center;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: self-end;
+    width: 80vw;
+    position: absolute;
+    height: calc(100% - 50px);
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 3.2vw;
+  }
+
+  img{
+    width: 100%;
+  }
+}

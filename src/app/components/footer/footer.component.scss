@@ -1,0 +1,14 @@
+.container__footer {
+  width: 100vw;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+
+  span {
+    text-align: center;
+    color: var(--white);
+    font-size: 11px;
+  }
+}

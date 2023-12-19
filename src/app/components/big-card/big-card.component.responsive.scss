@@ -1,0 +1,37 @@
+.container__big-card {
+  .bannerDesktop {
+    display: block;
+  }
+
+  .bannerMobile {
+    display: none;
+  }
+
+  @media screen and (max-width: 764px) {
+    .bannerDesktop {
+      display: none;
+    }
+
+    .bannerMobile {
+      display: block;
+    }
+
+    h1 {
+      text-align: right;
+      font-size: 25px;
+      width: 190px;
+    }
+
+    ul {
+      text-align: right;
+      font-size: 3.2vw;
+      width: 42%;
+    }
+  }
+
+  img {
+    @media screen and (max-width: 480px) {
+      min-width: 320px;
+    }
+  }
+}

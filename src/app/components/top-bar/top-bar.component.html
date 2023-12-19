@@ -1,0 +1,32 @@
+<div class="container__top-bar">
+  <a class="top-bar__logo" [routerLink]="['']" >
+    <h1>Fashion</h1>
+  </a>
+  <div class="icon" (click)="toggleMenu()">
+    <span>_</span>
+    <span>_</span>
+    <span>_</span>
+  </div>
+  <nav class="top-bar__nav" *ngIf="menuAberto" >
+    <ul>
+      <button class="close" (click)="toggleMenu()">X</button>
+      <li>
+        <a [routerLink]="['']" (click)="toggleMenu()">Home</a>
+      </li>
+      <li>
+        <a [routerLink]="['tendencias']" (click)="toggleMenu()">Tendências</a>
+      </li>
+      <li>
+        <a [routerLink]="['novidades']" (click)="toggleMenu()">Novidades</a>
+      </li>
+      <li>
+        <a [routerLink]="['outono']" (click)="toggleMenu()">Outono</a>
+      </li>
+      <li>
+        <a [routerLink]="['verao']" class="blackFriday" (click)="toggleMenu()">Verão</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<!-- <li><a [[routerLink]="['/routePath']" routerLinkActive="router-link-active" ]>Tendências</a></li> -->
