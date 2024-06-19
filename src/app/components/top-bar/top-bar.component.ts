@@ -9,8 +9,8 @@ import { DeviceDetectorService } from 'ngx-device-detector';
 })
 export class TopBarComponent implements OnInit {
 
-  menuAberto: boolean = false;
-  isMobile?: boolean;
+  menuAberto = true;
+  isMobile = false;
 
   constructor(private deviceService: DeviceDetectorService) {}
 
@@ -19,10 +19,20 @@ export class TopBarComponent implements OnInit {
 
     // Se não for um dispositivo móvel, mantenha o menu sempre aberto
     if (!this.isMobile) {
-      this.menuAberto = true;
-    } else {
       this.menuAberto = false;
+    } else {
+      this.menuAberto = true;
     }
+  }
+
+  openMenu(): void {
+    // Se for um dispositivo móvel, toggle o menu
+      this.menuAberto = true;
+  }
+
+  closeMenu(): void {
+    // Se for um dispositivo móvel, toggle o menu
+      this.menuAberto = false;
   }
 
   toggleMenu(): void {

@@ -2,28 +2,48 @@
   <a class="top-bar__logo" [routerLink]="['']" >
     <h1>Fashion</h1>
   </a>
-  <div class="icon" (click)="toggleMenu()">
+  <div class="icon" (click)="openMenu()">
     <span>_</span>
     <span>_</span>
     <span>_</span>
   </div>
+  <nav class="top-bar__nav_desk">
+    <ul>
+      <button class="close" (click)="closeMenu()">X</button>
+      <li>
+        <a [routerLink]="['']" (click)="closeMenu()">Home</a>
+      </li>
+      <li>
+        <a [routerLink]="['tendencias']" (click)="closeMenu()">Tendências</a>
+      </li>
+      <li>
+        <a [routerLink]="['novidades']" (click)="closeMenu()">Novidades</a>
+      </li>
+      <li>
+        <a [routerLink]="['outono']" (click)="closeMenu()">Outono</a>
+      </li>
+      <li>
+        <a [routerLink]="['verao']" class="blackFriday" (click)="closeMenu()">Verão</a>
+      </li>
+    </ul>
+  </nav>
   <nav class="top-bar__nav" *ngIf="menuAberto" >
     <ul>
-      <button class="close" (click)="toggleMenu()">X</button>
+      <button class="close" (click)="closeMenu()">X</button>
       <li>
-        <a [routerLink]="['']" (click)="toggleMenu()">Home</a>
+        <a [routerLink]="['']" (click)="closeMenu()">Home</a>
       </li>
       <li>
-        <a [routerLink]="['tendencias']" (click)="toggleMenu()">Tendências</a>
+        <a [routerLink]="['tendencias']" (click)="closeMenu()">Tendências</a>
       </li>
       <li>
-        <a [routerLink]="['novidades']" (click)="toggleMenu()">Novidades</a>
+        <a [routerLink]="['novidades']" (click)="closeMenu()">Novidades</a>
       </li>
       <li>
-        <a [routerLink]="['outono']" (click)="toggleMenu()">Outono</a>
+        <a [routerLink]="['outono']" (click)="closeMenu()">Outono</a>
       </li>
       <li>
-        <a [routerLink]="['verao']" class="blackFriday" (click)="toggleMenu()">Verão</a>
+        <a [routerLink]="['verao']" class="blackFriday" (click)="closeMenu()">Verão</a>
       </li>
     </ul>
   </nav>

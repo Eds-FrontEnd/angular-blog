@@ -1,7 +1,16 @@
 @media screen and (max-width: 450px) {
   .container__top-bar {
+
+    .top-bar__nav_desk{
+      display: none;
+    }
+
     @media screen and (max-width: 320px) {
       min-width: 320px;
+
+      .top-bar__nav_desk{
+        display: none;
+      }
 
       .top-bar__nav{
         min-width: 320px;
